@@ -13,7 +13,7 @@ function ItemIcon(props: ItemIconType) {
   
   return (
     <>
-      <Box color={"#ffffff"} bgcolor={iconBgcolor} display="inline" paddingX={1} paddingY={0.2} fontSize={11} borderRadius={5} marginRight={0.5}>
+      <Box color={"#ffffff"} bgcolor={iconBgcolor} display="inline-block" paddingX={1} paddingY={0.2} fontSize={11} borderRadius={5} marginRight={0.5}>
         {iconName}
       </Box>
     </>

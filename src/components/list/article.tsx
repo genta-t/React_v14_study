@@ -12,7 +12,7 @@ type InfoType = {
   numberOfReviews: number,
   judgmentPeriod: string,
   image: string,
-  itemIcon: ItemIconType,
+  itemIcon: ItemIconType[],
 };
 
 type ItemIconType = {
@@ -28,20 +28,68 @@ function Article() {
       numberOfReviews: 627,
       judgmentPeriod: '入金確認後約90日〜180日　(通帳記載の目安　約3日)',
       image: '/images/monologo4.jpg',
-      itemIcon: {
-        name: 'あんしん保証',
-        bgcolor: '#95b200',
-      },
+      itemIcon:[
+        {
+          name: 'あんしん保証',
+          bgcolor: '#95b200',
+        },
+        {
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+      ] 
     },
     {
       name: 'ニトリ',
       numberOfReviews: 500,
       judgmentPeriod: '入金確認後約90日〜180日　(通帳記載の目安　約9日)',
       image: '/images/nitori.jpg',
-      itemIcon: {
-        name: 'くり返しOK', 
-        bgcolor: '#00d6ff',
-      }
+      itemIcon:[
+        {
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+        {
+          name: 'あんしん保証', 
+          bgcolor: '#95b200',
+        },
+        {
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+        {
+          name: 'あんしん保証', 
+          bgcolor: '#95b200',
+        },{
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+        {
+          name: 'あんしん保証', 
+          bgcolor: '#95b200',
+        },{
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+        {
+          name: 'あんしん保証', 
+          bgcolor: '#95b200',
+        },{
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+        {
+          name: 'あんしん保証', 
+          bgcolor: '#95b200',
+        },{
+          name: 'くり返しOK', 
+          bgcolor: '#00d6ff',
+        },
+        {
+          name: '全額返金', 
+          bgcolor: '#000000',
+        },
+      ] 
     },
   ]
 
@@ -62,10 +110,11 @@ function Article() {
                     <Reviews numberOfReviews={i.numberOfReviews} />
                   </Box>
                   <Box marginBottom={2}>
-                  {/* {i.map((icon: any) => {
-                    <ItemIcon iconName={icon.name} iconBgcolor={icon.bgcolor} />
-                  })} */}
-                    <ItemIcon iconName={'くり返しOK'} iconBgcolor={'#00d6ff'} />
+                    {i.itemIcon.map((icon: ItemIconType) => {
+                      return(
+                        <ItemIcon iconName={icon.name} iconBgcolor={icon.bgcolor} />
+                      )
+                    })}
                   </Box>
                   <Box border={1} borderColor={"#ffe5cb"} borderRadius={6}>
                     <Box display="flex" justifyContent="center">
