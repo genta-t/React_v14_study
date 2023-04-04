@@ -11,10 +11,10 @@ function Title(props: TitleType) {
     <>
       <Box
         color={color}
-        fontSize={26}
-        letterSpacing={1}
-        marginBottom={2.5}
-        lineHeight={1.4}
+        fontSize='26px'
+        letterSpacing='3px'
+        marginBottom='20px'
+        lineHeight='36px'
         fontWeight={900}
       >
         {title}

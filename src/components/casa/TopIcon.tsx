@@ -9,7 +9,7 @@ function TopIcon(props: TopIconType) {
 
   return (
     <>
-      <Box width={50} position='absolute' top={-25} left={25}>
+      <Box width='50px' position='absolute' top={-25} left={25}>
         <img src={image} width='100%' />
       </Box>
     </>

@@ -18,14 +18,12 @@ function LinkButton(props: LinkButtonTypes) {
             bgcolor={bgcolor}
             color='#FFFFFF'
             display='inline-block'
-            paddingY={1.5}
-            paddingX={3}
-            fontSize={14}
+            paddingY='12px'
+            paddingX='24px'
+            fontSize='14px'
             fontWeight={900}
-            marginBottom={0.5}
-            lineHeight={1.4}
-            borderRadius={32}
-            marginRight={1}
+            lineHeight='20px'
+            borderRadius='32px'
             position='relative' top={55} left={45}
           >
             {name}　　→

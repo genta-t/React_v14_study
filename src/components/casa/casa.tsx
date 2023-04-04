@@ -111,15 +111,15 @@ function Casa() {
   return (
     <>
       <Box width='100%'>
-        <Box width='95%' maxWidth={1400} margin='0 auto'>
+        <Box width='95%' maxWidth='1400px' margin='0 auto'>
           <Grid container>
             {casaItems.map((c: CasaType) => {
               return(
                 <Grid item xs={4}>
-                  <Box width={430} height={500} bgcolor='#FFFFFF' position='relative'>
+                  <Box width='430px' height='500px' bgcolor='#FFFFFF' position='relative'>
                     <TopIcon image={c.topIconImage}/>
                     <TopImage image={c.topImage} />
-                    <Box marginTop={3}>
+                    <Box marginTop='24px'>
                       <Box margin='0 auto' width='80%'>
                         <EnglishTitle title={c.englishTitle} />
                         <Title title={c.mainTitle.title} color={c.mainTitle.color}/>

@@ -13,14 +13,14 @@ function Tag(props: TagTypes) {
         bgcolor='#eeeeee'
         color='#1f2833'
         display='inline-block'
-        paddingY={0.5}
-        paddingX={0.8}
-        fontSize={14}
-        marginBottom={0.5}
-        letterSpacing={1}
-        lineHeight={1.4}
-        borderRadius={8}
-        marginRight={0.6}
+        paddingY='3px'
+        paddingX='6px'
+        fontSize='14px'
+        marginBottom='4px'
+        letterSpacing='1px'
+        lineHeight='20px'
+        borderRadius='8px'
+        marginRight='4px'
       >
         {name}
       </Box>

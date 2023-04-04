@@ -8,7 +8,7 @@ function EnglishTitle(props: EnglishTitleType) {
   const { title } = props;
   return (
     <>
-      <Box color='#999999' fontSize={14} marginBottom={0.5}>{title}</Box>
+      <Box color='#999999' fontSize='14px' marginBottom='4px'>{title}</Box>
     </>
   );
 }
